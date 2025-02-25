@@ -1,0 +1,42 @@
+<main class="font-outfit grid grid-cols-2 justify-items-center items-center">
+  <h2 class="text-center text-4xl m-4">Každý krok může být jízda.</h2>
+  <p class="col-start-1 text-2xl font-light m-4 px-40 text-justify">
+    Vyrábíme rychlejší dopravu po městě. Vyrábíme ručně a po nízkých šaržích a
+    proto máme dokonalý přehled nad kvalitou každé boty. Každou botu testujeme a
+    její certifikát dostanete při doručení a do e-mailu.
+  </p>
+  <p class="col-start-1 text-2xl font-light m-4 px-40 text-center">
+    Už od
+    <strong class="font-semibold text-3xl text-orange-800">2 500 Kč</strong>
+  </p>
+  <div
+    class="col-start-2 row-span-2 row-start-1 p-4 flex flex-col items-center justify-center"
+  >
+    <h3 class="text-xl text-center m-3">Podívejte se na vlastnosti své boty</h3>
+    <form
+      class="flex flex-row items-center"
+      [formGroup]="shoeCodeForm"
+      (ngSubmit)="handleSubmit()"
+    >
+      <input
+        type="text"
+        class="max-w-100 h-8 indent-1 border-2 rounded p-1 border-orange-700 outline-none transition focus:shadow-lg m-2 mr-1 box-border"
+        aria-label="Insert the shoe code."
+        placeholder="abcd123"
+        formControlName="shoeCode"
+        id="shoecode"
+      />
+      <button
+        class="p-1 h-8 bg-orange-700 rounded cursor-pointer transition hover:bg-orange-800 active:bg-orange-800 disabled:cursor-not-allowed disabled:bg-orange-700/50"
+        type="submit"
+        [disabled]="!shoeCodeForm.valid"
+      >
+        <svg viewBox="0 0 24 24" class="stroke-2 size-6 stroke-white">
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <line x1="12" y1="22" x2="22" y2="12" />
+          <line x1="12" y1="2" x2="22" y2="12" />
+        </svg>
+      </button>
+    </form>
+  </div>
+</main>

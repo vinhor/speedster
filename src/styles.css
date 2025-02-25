@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-orbitron: "Orbitron", sans-serif;
+}
+
+@utility grid-auto-rows-* {
+  grid-template-rows: repeat(--value(integer), auto);
+}
+
+@utility grid-auto-cols-* {
+  grid-template-columns: repeat(--value(integer), auto);
+}
