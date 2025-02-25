@@ -4,7 +4,7 @@ import { LinkComponent } from './link/link.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LinkComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
