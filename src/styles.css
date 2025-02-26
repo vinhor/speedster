@@ -14,3 +14,7 @@
 @utility grid-auto-cols-* {
   grid-template-columns: repeat(--value(integer), auto);
 }
+
+.icon-box-text {
+  @apply text-center font-outfit text-lg font-light;
+}
