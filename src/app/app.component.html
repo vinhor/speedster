@@ -1,11 +1,20 @@
-<nav class="flex justify-between min-h-18 items-center">
-  <a
-    routerLink="/"
-    class="font-orbitron tracking-widest text-4xl p-2 ml-2 text-amber-700"
-    >SPEEDSTER</a
-  >
-  <div class="flex">
-    <!-- <app-link link="/o-nas" name="O nás" /> -->
+<div class="min-h-screen flex flex-col items-center">
+  <div class="shrink-0 basis-auto grow">
+    <nav class="flex justify-between min-h-18 items-center">
+      <a
+        routerLink="/"
+        class="font-orbitron tracking-widest text-4xl p-2 ml-2 text-amber-700"
+        >SPEEDSTER</a
+      >
+      <div class="flex">
+        <!-- <app-link link="/o-nas" name="O nás" /> -->
+      </div>
+    </nav>
+    <router-outlet />
   </div>
-</nav>
-<router-outlet />
+  <footer class="shrink-0 font-outfit m-2 text-center text-black/60 max-w-5xl">
+    Toto je pouze fiktivní firma. Jakákoliv podobnost s jakoukoliv jinou
+    právnickou osobou je čistě náhodná. <br />
+    Page by Vincent Horecký
+  </footer>
+</div>
