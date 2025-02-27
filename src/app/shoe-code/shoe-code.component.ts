@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './shoe-code.component.css',
 })
 export class ShoeCodeComponent {
-  handleClick() {
-    alert(
-      'Toto je pouze fiktivní firma, a systém přihlašování není a nebude implementován.'
-    );
+  handleClick(text: string) {
+    alert(text);
   }
 }

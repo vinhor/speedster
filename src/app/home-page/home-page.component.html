@@ -16,7 +16,9 @@
   <div
     class="lg:col-start-2 row-span-2 lg:row-start-1 p-4 flex flex-col items-center justify-center"
   >
-    <h3 class="text-xl text-center m-3">Podívejte se na vlastnosti své boty</h3>
+    <h3 class="text-xl text-center m-3">
+      Podívejte se na vlastnosti svých bot
+    </h3>
     <form
       class="flex flex-row items-center"
       [formGroup]="shoeCodeForm"
@@ -42,5 +44,37 @@
         </svg>
       </button>
     </form>
+  </div>
+  <div class="flex col-span-2 font-outfit *:m-4 *:mx-8">
+    <article>
+      <h3 class="font-light text-3xl m-2 text-center">Speedster Roll</h3>
+      <section>
+        <ul class="list-disc">
+          <li>S kolečky</li>
+          <li>Velikosti 35-48</li>
+          <li>V nejrůznějších barvách</li>
+        </ul>
+        <p
+          class="col-start-1 text-2xl font-semibold text-orange-800 m-4 text-center font-outfit"
+        >
+          2 500 Kč
+        </p>
+      </section>
+    </article>
+    <article>
+      <h3 class="font-light text-3xl m-2 text-center">Speedster Roll+</h3>
+      <section>
+        <ul class="list-disc">
+          <li>S kolečky</li>
+          <li>Velikosti 39-48</li>
+          <li>Napajéné - pohybujte se ještě rychleji</li>
+        </ul>
+        <p
+          class="col-start-1 text-2xl font-semibold text-orange-800 m-4 text-center font-outfit"
+        >
+          3 500 Kč
+        </p>
+      </section>
+    </article>
   </div>
 </main>
